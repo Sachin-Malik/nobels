@@ -28,7 +28,6 @@ function App() {
   const [catergoryBoxes,setcatergoryBoxes] = useState(new Array(PRIZE_CATEGORY.length).fill(true));
 
   const itemsPerPage = 10;
-  var twoTimeWinners = [];
   useEffect(() => {
 
     const fetchData = async () => {
@@ -100,7 +99,7 @@ function App() {
          if(catergoryBoxes[mapIndexForCategory[data[i].category]]&&checkYear(data[i].year))
           filteredData.push(data[i]);
       }
-
+      
       pageCount=(Math.ceil(filteredData.length/10));
       const indexOfLastItem= currentPage*itemsPerPage;
       const indexOfFirstItem= indexOfLastItem-itemsPerPage;
@@ -110,23 +109,24 @@ function App() {
   }
   
   filterData();
-  const getTwoTimer = ()=>{
+  // const getTwoTimer = ()=>{
 
-    if(twoTimeWinners.length===0&&data&&data.length!==0){
-    let nameToWins =new Map();
-    for(let i=0;i<data.length;i++){
-          if(data[i].laureates){
-            for(let j=0;j<data[i].laureates.length;j++){
-                nameToWins[data[i].laureates[j].id]++;
-            }
-          }
-      }
-      console.log(nameToWins);
+  //   if(twoTimeWinners.length===0&&data&&data.length!==0){
+  //   let nameToWins =new Map();
+  //   for(let i=0;i<data.length;i++){
+  //         if(data[i].laureates){
+  //           for(let j=0;j<data[i].laureates.length;j++){
+  //               nameToWins[data[i].laureates[j].id]++;
+  //           }
+  //         }
+  //     }
+  //     console.log(nameToWins);
      
-    }
+  //   }
    
-  }
-  getTwoTimer();
+  // }
+  // getTwoTimer();
+  console.log(data);
   return (
     <div className='container'>
       <h1 className='my-5 text-center heading'>Nobel Winners</h1>
