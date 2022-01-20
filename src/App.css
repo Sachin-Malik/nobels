@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+}
+.my-card{
+  font-family: 'Roboto', sans-serif ;
+  background: #e0ebe8;
+  padding: 4%;
+}
+
+.filter-btn{
+  color:#ffffff;
+  font-family: 'Roboto', sans-serif ;
+  background: #1e836c;
+}
+
+.filter-btn:hover{
+  color:#ffffff;
+  font-family: 'Roboto', sans-serif ;
+  background: #1e836c;
+}
+
+.category{
+  border: none;
+   padding: 5px 15px;
+   position:absolute;
+   top: 10%;
+   right: 10%;
+   background: #1e836c;
+   color:white;
+  font-family: 'Roboto', sans-serif ;
+
+}
+
+.drop-shadow{
+  box-shadow: 0px 7px 5px lightgray;
+  z-index:999;
+}
+
+.no-result{
+  background: url(../public/no_result.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 400px;
+ 
+}
+
+.heading{
+  font-family:'Montserrat', sans-serif;
+  font-size: 900;
+  color: #1e836c;
+}
+
