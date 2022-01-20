@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/nobels/static/css/main.d994a42c.css",
-    "main.js": "/nobels/static/js/main.500b5214.js",
+    "main.js": "/nobels/static/js/main.e653fe13.js",
     "static/media/no_result.svg": "/nobels/static/media/no_result.737e1796270b0a5505e2.svg",
     "index.html": "/nobels/index.html",
     "main.d994a42c.css.map": "/nobels/static/css/main.d994a42c.css.map",
-    "main.500b5214.js.map": "/nobels/static/js/main.500b5214.js.map"
+    "main.e653fe13.js.map": "/nobels/static/js/main.e653fe13.js.map"
   },
   "entrypoints": [
     "static/css/main.d994a42c.css",
-    "static/js/main.500b5214.js"
+    "static/js/main.e653fe13.js"
   ]
 }
