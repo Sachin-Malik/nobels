@@ -2,7 +2,7 @@ import React from 'react'
 
 function Card({data}) {
     return (
-        <div className='col-12 col-md-5 my-3 text-center my-card rounded drop-shadow'>
+        <div className='col-10 col-md-5 my-3 text-center my-card rounded drop-shadow'>
             <p className='category card rounded'>{data.category}</p>
             <div className='row'>
                  <div className='d-inline font-weight-bold'>Year :</div><div className='d-inline'>{data.year}</div>
